@@ -50,13 +50,9 @@ namespace LoggingKata
             var tacoBell = new TacoBell
             {
                 Name = cells[2],
-                Location = new Point()
-                {
-                    Latitude = lat,
-                    Longitude = lon
-                }
+                Location = new Point(){Latitude = lat, Longitude = lon }
             };
-
+            Logger.Info("Created a new Taco Bell.");
             return tacoBell;
         }
 
